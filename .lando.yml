@@ -28,7 +28,6 @@ tooling:
     description: Runs `gatsby develop`
     cmd:
       - appserver: gatsby develop --host 0.0.0.0 --port 8000
-      - appserver: echo "https://gatsby.lndo.site"
     user: root
   node:
     service: appserver
