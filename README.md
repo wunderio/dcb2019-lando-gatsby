@@ -1,22 +1,21 @@
 # Gatsby project in a Lando environment
 
-- run `lando start`
-- run `lando develop`
+## Setup
 
-Sites are available at:
+- Install the latest [Lando](https://docs.lando.dev/basics/installation.html).
+- Run:
+  - `lando start`,
+  - `lando develop`.
+- Go to:
+  - <https://gatsby.lndo.site/> for Gatsby,
+  - <https://gatsby.lndo.site/___graphql> for GraphiQL.
 
-- Gatsby: <https://gatsby.lndo.site/>
-- GraphiQL: <https://gatsby.lndo.site/___graphql>
+## Gatsby commands
 
-## Tools
+- Use `lando develop` for `gatsby develop`.
+- Use `lando gatsby <command>` for other Gatsby commands.
+- @todo: `lando gatsby serve` doesn't provide workable URL.
 
-- `lando develop` - use for `gatsby develop` command,
-- `lando gatsby <command>` - use for other Gatsby commands.
+Gatsby upstream for this project: <https://github.com/gatsbyjs/gatsby-starter-default>.
 
-## Build steps
-
-- install Gatsby
-- create a Gatsby project: `gatsby new gatsby-default-starter https://github.com/gatsbyjs/gatsby-starter-default`
-- add `.lando.yml` to project root
-
-Original Gatsby readme: [README-gatsby.md](README-gatsby.md)
+Original Gatsby readme: [README-gatsby.md](README-gatsby.md).
