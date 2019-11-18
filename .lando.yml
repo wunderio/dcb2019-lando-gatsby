@@ -13,13 +13,13 @@ services:
       - yarn
 
 tooling:
-  gatsby:
-    service: appserver
   develop:
-    description: Runs `gatsby develop` with host & port options as root
+    description: Runs `gatsby develop` as root with host & port options
     cmd:
       - appserver: gatsby develop --host 0.0.0.0 --port 8000
     user: root
+  gatsby:
+    service: appserver
   node:
     service: appserver
   npm:
