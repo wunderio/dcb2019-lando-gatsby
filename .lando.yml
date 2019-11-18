@@ -2,11 +2,12 @@ name: gatsby
 
 proxy:
   appserver:
-    - gatsby.lndo.site
+    - gatsby.lndo.site:8000
 
 services:
   appserver:
     type: node
+    port: '8000'
     build:
       - yarn global add gatsby-cli
       - yarn
@@ -17,7 +18,7 @@ tooling:
   develop:
     description: Runs `gatsby develop` with host & port options as root
     cmd:
-      - appserver: gatsby develop --host 0.0.0.0 --port 80
+      - appserver: gatsby develop --host 0.0.0.0 --port 8000
     user: root
   node:
     service: appserver
